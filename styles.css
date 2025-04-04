@@ -18,7 +18,7 @@
   --purple-100: #8ebbff;
   --purple-200: #925ff0;
 
-  --gap: 2rem;
+  --gap: 2.5rem;
   --padding: 1.5rem;
 }
 
@@ -134,6 +134,7 @@ section {
 .stack-items {
   display: flex;
   flex-wrap: wrap;
+
   gap: var(--gap);
   justify-content: center;
 }
@@ -207,6 +208,11 @@ section {
   gap: 1rem;
 }
 
+.icons-footer {
+  display: flex;
+  gap: 1rem;
+}
+
 .icons i {
   color: var(--white);
   cursor: pointer;
@@ -239,6 +245,18 @@ input, textarea {
   font-size: 1rem;
 }
 
+footer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
 /* RESPONSIVENESS */
 @media (max-width: 1024px) {
   .about, .contact {
@@ -264,6 +282,13 @@ input, textarea {
   .form {
     padding: 1rem;
   }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ 
 }
 
 @media (max-width: 480px) {
@@ -280,4 +305,5 @@ input, textarea {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+  
 }
